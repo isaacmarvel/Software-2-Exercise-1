@@ -5,9 +5,9 @@ using PetStore.Models;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-var newVariable = CreateServiceCollection();
+var services = CreateServiceCollection();
 
-var productLogic = newVariable.GetService<IProductLogic>;
+services.GetService<IProductLogic>;
 
 string userInput = DisplayMenuAndGetInput();
 
