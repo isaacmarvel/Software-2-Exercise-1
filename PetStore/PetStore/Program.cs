@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 var services = CreateServiceCollection();
 
-services.GetService<IProductLogic>;
+var productLogic = services.GetService<IProductLogic>();
 
 string userInput = DisplayMenuAndGetInput();
 
